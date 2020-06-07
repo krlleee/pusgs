@@ -1,0 +1,152 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/reghome" >
+        <img src="/assets/img/ns.jpg" width="112" height="28">
+      </a>
+  
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" routerLink="/rentflight">
+          Search flights
+         </a>
+   
+         <a class="navbar-item">
+           Hotels
+         </a>
+ 
+         <a class="navbar-item" routerLink="/carcompanies">
+           Rent a car
+         </a>
+ 
+         <a class="navbar-item" routerLink="/friends" >
+             Friends
+         </a>
+ 
+         <a class="navbar-item" routerLink="/myreservations">
+             My Reservations
+         </a>
+         
+         <a class="navbar-item" routerLink="/companies" >
+           AvioCompanies
+       </a>
+  
+        
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+           
+            <a class="button is-primary" routerLink="/profile">
+              Profile
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      
+    </div>
+  </nav>
+  
+  <!-- <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <div class="field">
+    <label class="label" style="margin-left: 35%;margin-top: 1%;">Name</label>
+    <div class="control">
+      <input class="input" style="width: 40%;margin-left: 35%;" type="text" formControlName="name">
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label" style="margin-left: 35%;">Surname</label>
+    <div class="control">
+      <input class="input" style="width: 40%;margin-left: 35%;" type="text" formControlName="lastname">
+    </div>
+  </div>
+  
+  <div class="field">
+    <label class="label" style="margin-left: 35%;">Email</label>
+   
+    <div class="control">
+      <input class="input" style="width: 40%;margin-left: 35%;" type="email" formControlName="email">
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label" style="margin-left: 35%;">Phone number</label>
+    <div class="control">
+        
+      <input class="input" style="width: 40%;margin-left: 35%;" type="text" formControlName="phoneNo">
+    </div>
+  </div>
+
+  <div class="field">
+    
+    <label class="label" style="margin-left: 35%;">Address</label>
+    <div class="control">
+      <input class="input" style="width: 40%;margin-left: 35%;" type="text" formControlName="address">
+    </div>
+  </div>
+  
+  <div class="field">
+    <p class="control">
+      <button class="button is-success" routerLink="/reghome"  style="margin-left: 35%;" >
+        Save
+      </button>
+
+      <button class="button is-danger" routerLink="/reghome"  style="margin-left: 28%;" >
+        Discard
+      </button>
+      
+    </p>
+  </div>
+</form> -->
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <label class="label" style="margin-left: 35%;margin-top: 1%;">Name</label>
+  <div class="form-group input-group">
+    <input class="input" style="width: 40%;margin-left: 35%;" type="text" formControlName="name" required>
+  </div> <!-- form-group// -->
+
+  <label class="label" style="margin-left: 35%;">Surname</label>
+  <div class="form-group input-group">
+    <input class="input" style="width: 40%;margin-left: 35%;" type="text" formControlName="lastname" required>
+  </div> <!-- form-group// -->
+
+  <label class="label" style="margin-left: 35%;">Address</label>
+  <div class="form-group input-group">
+    <input class="input" style="width: 40%;margin-left: 35%;" type="text" formControlName="address" required>
+  </div> <!-- form-group// -->
+
+  <label class="label" style="margin-left: 35%;">Phone Number</label>
+  <div class="form-group input-group">
+    <input class="input" style="width: 40%;margin-left: 35%;" type="text" formControlName="phoneNumber" required>
+  </div> <!-- form-group// -->
+
+  <label class="label" style="margin-left: 35%;">Email</label>
+  <div class="form-group input-group">
+    <input class="input" style="width: 40%;margin-left: 35%;" type="text" formControlName="email" required>
+  </div> <!-- form-group// -->
+    <div class="form-group">
+      
+        <p class="control">
+          <button type="submit" class="button is-success" style="margin-left: 35%;" >
+            Save
+          </button>
+          <button class="button is-danger" routerLink="/reghome"  style="margin-left: 28%;" >
+            Discard
+          </button>
+
+          
+          
+        </p>
+    
+    </div> <!-- form-group// -->
+</form>
+
+

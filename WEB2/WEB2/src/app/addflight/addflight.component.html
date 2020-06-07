@@ -1,0 +1,108 @@
+<section class="section">
+
+  <div class="container">
+      <form (ngSubmit) ="add()" #addForm="ngForm"> 
+        
+          <div class="field">
+              <label class="label">Company photo(url)</label>
+              <input style="width: 50%;" type="text" name="photo"
+               class="input" [(ngModel)]= "model.photo">
+
+          </div>
+
+          <!-- <div class="field">
+              <label class="label">Id</label>
+              <input style="width: auto;" type="text" name="id"
+               class="input" [(ngModel)]= "model.id">
+
+          </div> -->
+
+          <div class="field">
+              <label class="label">Start city</label>
+              <input style="width: 50%;" type="text" name="city1"
+               class="input" [(ngModel)]= "model.city1">
+
+          </div>
+
+          <div class="field">
+            <label class="label">Landing city</label>
+            <input style="width: 50%;" type="text" name="city2"
+             class="input" [(ngModel)]= "model.city2">
+
+        </div>
+
+        
+
+          <div class="field">
+              <label class="label">City 1 short </label>
+              <input style="width: 50%;" type="text" name="city1short"
+               class="input" [(ngModel)]= "model.city1short">
+
+          </div>
+
+          <div class="field">
+            <label class="label">City 2 short </label>
+            <input style="width: 50%;" type="text" name="city2short"
+             class="input" [(ngModel)]= "model.city2short">
+
+        </div>
+
+          <div class="field">
+              <label class="label">Take of time </label>
+              <input style="width: 50%;" type="text" name="time1"
+               class="input" [(ngModel)]= "model.time1">
+
+          </div>
+
+          <div class="field">
+            <label class="label">Landing time </label>
+            <input style="width: 50%;" type="text" name="time2"
+             class="input" [(ngModel)]= "model.time2">
+
+        </div>
+
+        <div class="field">
+          <label class="label">Flight duration </label>
+          <input style="width: 50%;" type="text" name="flighttime"
+           class="input" [(ngModel)]= "model.flighttime">
+
+        </div>
+
+        <div class="field">
+          <label class="label">Trip type </label>
+          <input style="width: 50%;" type="text" name="triptype"
+           class="input" [(ngModel)]= "model.triptype">
+
+        </div>
+
+        <div class="field">
+          <label class="label">Price </label>
+          <input style="width: 50%;" type="text" name="price"
+           class="input" [(ngModel)]= "model.price">
+
+        </div>
+
+        <div class="field">
+          <label class="label">From date </label>
+          <input style="width: 50%;" type="date" name="date1"
+           class="input" [(ngModel)]= "model.date1">
+
+        </div>
+
+        <div class="field">
+          <label class="label">From date </label>
+          <input style="width: 50%;" type="date" name="date2"
+           class="input" [(ngModel)]= "model.date2">
+
+        </div>
+  
+          
+  
+          <button type="submit" [disabled]="addForm.invalid" class="button is-success">
+             <strong>Add</strong></button>
+             <button  class="button is-danger" [routerLink]="['/rentflight']" routerLinkActive="router-link-active" style="margin-left: 45px;">
+              <strong>Back</strong></button>
+      </form>
+  
+  </div>
+</section>

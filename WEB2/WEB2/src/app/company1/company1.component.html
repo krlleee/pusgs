@@ -1,0 +1,96 @@
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+<section class="hero is-medium is-primary is-bold" id="myDiv">
+    <div class="hero-body">
+      <div class="container">
+        <img src="{{avioCompany.photoh}}" style="width:auto;height: fit-content;">
+      </div>
+    </div>
+  </section>
+
+  
+
+  <body>
+    <section class="section">
+      <div class="container">
+        <h2 class="subtitle">
+            
+        </h2>
+        
+        <!-- <h1 class="title"><strong>{{avioCompany.name}}</strong></h1> -->
+        <div class="form-group input-group">
+        <input  type="text"  class="form-control" formControlName="name" style="background: transparent;border:none;font-size: 30px;font-weight: bold;" required>
+        <button  class="button is-danger" routerLink="/companies"   style="margin-left: 3%;" >
+          Back
+        </button>  
+      </div>
+        
+        <div class="form-group input-group">
+        <input  type="text"  class="input" formControlName="promoDesc" style="background: transparent;border:none" required>
+        </div>
+        
+        <!-- <p><strong>{{avioCompany.promoDesc}}</strong></p> -->
+        
+        
+        <h2 class="subtitle">About us
+         
+         </h2>
+        <!-- <p>{{avioCompany.about}}</p>
+        <h3 class="subtitle"> --> 
+          
+          <div class="form-group input-group">
+            <textarea    class="textarea" formControlName="about" style="background: transparent;border:none"></textarea>
+          </div>
+        
+        <h4 class="subtitle">
+           
+        </h4>
+        <p> </p>
+        <h5 class="subtitle"></h5>
+        <h4 class="subtitle">
+            Address
+            
+        </h4>
+        <div class="form-group input-group">
+        <input  type="text" value="{{avioCompany.address}}" class="input" formControlName="address" style="background: transparent;border:none">
+        </div>
+
+
+        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+            
+           <iframe [src]='mapURL()' frameborder="10"
+              style="border:0;float: left;margin-left: 1%;margin-top: 5%;" allowfullscreen>
+            </iframe> 
+   
+            <button (click)="disableForm()" class="button is-success" style="margin-left: 35%;" >
+              Edit company
+            </button>
+
+            <button (click)="deleteCompany()" class="button is-danger" style="margin-left: 5%;" >
+              Delete company
+            </button>
+
+            <button type="submit" class="button is-success" style="margin-left: 5%;" >
+              Save
+            </button>
+
+            
+            
+        </div>
+
+        
+
+        
+
+    </div>
+    </section>
+  </body>
+
+</form>
+
+
+
+  <!--Google map-->
+   
+  
+  <!--Google Maps-->

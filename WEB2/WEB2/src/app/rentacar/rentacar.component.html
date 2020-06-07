@@ -1,0 +1,109 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/reghome" >
+        <img src="/assets/img/ns.jpg" width="112" height="28">
+      </a>
+  
+      <a role="button" class="navbar-burger burger"  aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" routerLink="/rentflight">
+          Search flights
+         </a>
+   
+         <a class="navbar-item">
+           Hotels
+         </a>
+ 
+         <a class="navbar-item" routerLink="/carcompanies" > 
+           Rent a car
+         </a>
+ 
+         <a class="navbar-item" routerLink="/friends" >
+             Friends
+         </a>
+ 
+         <a class="navbar-item" routerLink="/myreservations">
+             My Reservations
+         </a>
+         
+         <a class="navbar-item" routerLink="/companies" >
+           AvioCompanies
+       </a>
+  
+        <div class="navbar-item has-dropdown-up is-hoverable">
+          
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+           
+            <a class="button is-primary" routerLink="/profile">
+              Profile
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      
+    </div>
+  </nav>
+
+  <div class="control" style="margin-top: 5%;"  >
+    <input class="input" type="text" placeholder="Pick-up location" style="width: 200px; margin-left: 30%;" >
+    <input class="input" type="text" placeholder="Drop-off location" style="width: 200px; margin-right: 30%;" >
+  </div>
+
+  <div class="control" style="margin-top: 3%;"  >
+    <input class="input" type="text" placeholder="Pick-up date" style="width: 200px; margin-left: 30%;" >
+    <input class="input" type="text" placeholder="Pick-up time" style="width: 200px; margin-right: 30%;" >
+  </div>
+
+  <div class="control" style="margin-top: 3%;" >
+    <input class="input" type="text" placeholder="Drop-off date" style="width: 200px; margin-left: 30%;" >
+    <input class="input" type="text" placeholder="Drop-off time" style="width: 200px; margin-right: 30%;" >
+  </div>
+
+  <div class="control" style="margin-top: 3%;">
+    <p class="control has-icons-left">
+      <span class="select" style="margin-left: 30%;">
+        <select>
+          <option class="placeholder" selected disabled value="">Car type</option>
+          <option>Sedan</option>
+          <option>Coupe</option>
+          <option>Touring</option>
+        </select>
+      </span>
+    </p>
+  </div>
+
+  <div class="col-md-5" style="margin-left: 30%;">
+    <label for="broj">Passengers:<br> </label>
+    <input type="number" class="form-control"  style="width: 150px;">
+    </div>
+
+  <button class="button is-info is-outlined" style="margin-left: 50%;" routerLink="/filteredcar">
+    Search cars
+  </button>

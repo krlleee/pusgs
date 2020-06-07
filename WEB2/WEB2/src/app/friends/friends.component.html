@@ -1,0 +1,96 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/reghome" >
+        <img src="/assets/img/ns.jpg" width="112" height="28">
+      </a>
+  
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" routerLink="/rentflight">
+         Search flights
+        </a>
+  
+        <a class="navbar-item">
+          Hotels
+        </a>
+
+        <a class="navbar-item" routerLink="/carcompanies">
+          Rent a car
+        </a>
+
+        <a class="navbar-item" routerLink="/friends" >
+            Friends
+        </a>
+
+        <a class="navbar-item" routerLink="/myreservations">
+            My Reservations
+        </a>
+        
+        <a class="navbar-item" routerLink="/companies" >
+          AvioCompanies
+      </a>
+        
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+           
+            <a class="button is-primary" routerLink="/profile">
+              Profile
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </nav>
+
+
+  <form [formGroup]="registerForm" > 
+    <div class="field">
+      
+      <div class="form-group input-group">
+          <input class="input" style="width: 40%;margin-left: 30%;" type="text" placeholder="Search..." formControlName="name">
+          <button class="button is-success"  (click)="onSubmit()" >
+            Search
+        </button>
+        </div>
+    
+          
+      
+    </div>
+
+
+    <div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+      <table class="table table-bordered table-striped mb-0" style="width: 60%;" align="center">
+        <thead>
+          <tr>
+            
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
+            <th scope="col">Accepted</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let friend of friends">
+            
+            <td align="center">{{friend.name}}</td>
+            <td align="center">{{friend.lastName}}</td>
+            <td align="center"><input type="checkbox"></td>
+            
+          </tr>
+          
+          
+        </tbody>
+      </table>
+    
+    </div>
+  </form>

@@ -1,0 +1,14 @@
+C:\Users\OLIVERA\Desktop\dusan\WebApp2\WebApp2\bin\Debug\netcoreapp2.1\WebApp2.deps.json
+C:\Users\OLIVERA\Desktop\dusan\WebApp2\WebApp2\bin\Debug\netcoreapp2.1\WebApp2.runtimeconfig.json
+C:\Users\OLIVERA\Desktop\dusan\WebApp2\WebApp2\bin\Debug\netcoreapp2.1\WebApp2.runtimeconfig.dev.json
+C:\Users\OLIVERA\Desktop\dusan\WebApp2\WebApp2\bin\Debug\netcoreapp2.1\WebApp2.dll
+C:\Users\OLIVERA\Desktop\dusan\WebApp2\WebApp2\obj\Debug\netcoreapp2.1\WebApp2.csprojAssemblyReference.cache
+C:\Users\OLIVERA\Desktop\dusan\WebApp2\WebApp2\obj\Debug\netcoreapp2.1\WebApp2.csproj.CoreCompileInputs.cache
+C:\Users\OLIVERA\Desktop\dusan\WebApp2\WebApp2\obj\Debug\netcoreapp2.1\WebApp2.RazorAssemblyInfo.cache
+C:\Users\OLIVERA\Desktop\dusan\WebApp2\WebApp2\obj\Debug\netcoreapp2.1\WebApp2.RazorAssemblyInfo.cs
+C:\Users\OLIVERA\Desktop\dusan\WebApp2\WebApp2\obj\Debug\netcoreapp2.1\WebApp2.AssemblyInfoInputs.cache
+C:\Users\OLIVERA\Desktop\dusan\WebApp2\WebApp2\obj\Debug\netcoreapp2.1\WebApp2.AssemblyInfo.cs
+C:\Users\OLIVERA\Desktop\dusan\WebApp2\WebApp2\obj\Debug\netcoreapp2.1\WebApp2.RazorTargetAssemblyInfo.cache
+C:\Users\OLIVERA\Desktop\dusan\WebApp2\WebApp2\bin\Debug\netcoreapp2.1\WebApp2.pdb
+C:\Users\OLIVERA\Desktop\dusan\WebApp2\WebApp2\obj\Debug\netcoreapp2.1\WebApp2.dll
+C:\Users\OLIVERA\Desktop\dusan\WebApp2\WebApp2\obj\Debug\netcoreapp2.1\WebApp2.pdb

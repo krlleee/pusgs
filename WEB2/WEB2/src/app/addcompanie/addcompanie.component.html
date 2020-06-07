@@ -1,0 +1,73 @@
+
+
+  <section class="section">
+
+    <div class="container">
+        <form (ngSubmit) ="add()" #addForm="ngForm"> 
+          
+            <div class="field">
+                <label class="label">Name</label>
+                <input style="width: 50%;" type="text" name="name"
+                 class="input" [(ngModel)]= "model.name">
+ 
+            </div>
+
+            <div class="field">
+                <label class="label">Id</label>
+                <input style="width: 50%;" type="text" name="id"
+                 class="input" [(ngModel)]= "model.id">
+ 
+            </div>
+
+            <div class="field">
+                <label class="label">Promo description</label>
+                <input style="width: 50%;" type="text" name="promoDesc"
+                 class="input" [(ngModel)]= "model.promoDesc">
+ 
+            </div>
+
+            <div class="field">
+                <label class="label">Photo(url) </label>
+                <input style="width: 50%;" type="text" name="photo"
+                 class="input" [(ngModel)]= "model.photo">
+ 
+            </div>
+
+            <div class="field">
+                <label class="label">Photo header(url) </label>
+                <input style="width: 50%;" type="text" name="photoh"
+                 class="input" [(ngModel)]= "model.photoh">
+ 
+            </div>
+
+            <div class="field">
+                <label class="label">Map </label>
+                <input style="width: 50%;" type="text" name="map"
+                 class="input" [(ngModel)]= "model.map">
+ 
+            </div>
+
+            <div class="field">
+                <label class="label">Address </label>
+                <input style="width: 50%;" type="text" name="address"
+                 class="input" [(ngModel)]= "model.address">
+ 
+            </div>
+
+            <div class="field">
+                <label class="label">About </label>
+                <input style="width: 50%;" type="text" name="about"
+                 class="input" [(ngModel)]= "model.about">
+ 
+            </div>
+    
+            
+    
+            <button type="submit" [disabled]="addForm.invalid" class="button is-success">
+               <strong>Add</strong></button>
+               <button  class="button is-danger" [routerLink]="['/companies']" routerLinkActive="router-link-active" style="margin-left: 45px;">
+                <strong>Back</strong></button>
+        </form>
+    
+    </div>
+</section>

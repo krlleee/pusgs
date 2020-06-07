@@ -1,0 +1,102 @@
+<section class="hero is-medium is-primary is-bold" id="myDiv">
+    <div class="hero-body">
+      <div class="container">
+        
+      </div>
+    </div>
+  </section>
+
+  
+
+  <body>
+    <section class="section">
+      <div class="container">
+        <h2 class="subtitle">
+            
+        </h2>
+        
+        <h1 class="title"><strong>{{carCompany.name}}</strong></h1>
+        <p><strong>{{carCompany.promoDesc}}</strong></p>
+        
+        
+        <h2 class="subtitle">About us
+            
+        </h2>
+        <p>{{carCompany.about}}</p>
+        <h3 class="subtitle">
+            
+        </h3>
+        <h4 class="subtitle">
+           
+        </h4>
+
+        <h6 class="subtitle">
+           
+       </h6>
+        
+          Cars
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Model</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><p>{{carCompany.carB}}</p></td>
+                <td><p>{{carCompany.carM}}</p></td>
+                <td><p>{{carCompany.carP}}</p></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><p>{{carCompany.carB1}}</p></td>
+                <td><p>{{carCompany.carM1}}</p></td>
+                <td><p>{{carCompany.carP1}}</p></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><p>{{carCompany.carB2}}</p></td>
+                <td><p>{{carCompany.carM2}}</p></td>
+                <td><p>{{carCompany.carP2}}</p></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td><p>{{carCompany.carB3}}</p></td>
+                <td><p>{{carCompany.carM3}}</p></td>
+                <td><p>{{carCompany.carP3}}</p></td>
+              </tr>
+            </tbody>
+          </table>
+        <p> </p>
+        <h5 class="subtitle"></h5>
+        <h4 class="subtitle">
+            Address
+            
+        </h4>
+        <p>{{carCompany.address}}</p>
+        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+            
+            <iframe [src]='mapURL()' frameborder="10"
+              style="border:0;float: left;margin-left: 1%;margin-top: 5%;" allowfullscreen>
+            </iframe>
+            
+            
+           
+            
+            
+        </div>
+
+    </div>
+    </section>
+  </body>
+
+ 
+
+  <!--Google map-->
+   
+  
+  <!--Google Maps-->

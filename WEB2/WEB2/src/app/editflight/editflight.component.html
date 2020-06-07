@@ -1,0 +1,124 @@
+<section class="section">
+
+    <div class="container">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          
+            <div class="field">
+                <label class="label">Company photo(url)</label>
+                <div class="form-group input-group">
+                <input style="width: 50%;" type="text" class="input" formControlName="Photo">
+                </div>
+  
+            </div>
+  
+            
+  
+            <div class="field">
+                <label class="label">Start city</label>
+                <div class="form-group input-group">
+                <input style="width: 50%;" type="text" 
+                 class="input" formControlName="City1">
+                </div>
+  
+            </div>
+  
+            <div class="field">
+              <label class="label">Landing city</label>
+              <div class="form-group input-group">
+              <input style="width: 50%;" type="text" 
+               class="input" formControlName="City2">
+              </div>
+  
+          </div>
+  
+          
+  
+            <div class="field">
+                <label class="label">City 1 short </label>
+                <div class="form-group input-group">
+                <input style="width: 50%;" type="text" 
+                 class="input"  formControlName="City1short">
+                </div>
+  
+            </div>
+  
+            <div class="field">
+              <label class="label">City 2 short </label>
+              <div class="form-group input-group">
+              <input style="width: 50%;" type="text" 
+               class="input" formControlName="City2short">
+            </div>
+  
+            </div>
+  
+            <div class="field">
+                <label class="label">Take of time </label>
+                <div class="form-group input-group">
+                <input style="width: 50%;" type="text" 
+                 class="input" formControlName="Time1">
+                </div>
+  
+            </div>
+  
+            <div class="field">
+                <label class="label">Landing time </label>
+                <div class="form-group input-group">
+                <input style="width: 50%;" type="text" 
+                 class="input" formControlName="Time2">
+                </div>
+  
+            </div>
+  
+            <div class="field">
+                <label class="label">Flight duration </label>
+                <div class="form-group input-group">
+                <input style="width: 50%;" type="text" 
+                 class="input" formControlName="Flighttime">
+                </div>
+  
+            </div>
+  
+            <div class="field">
+                <label class="label">Trip type </label>
+                <div class="form-group input-group">
+                <input style="width: 50%;" type="text" 
+                 class="input" formControlName="Triptype">
+                </div>
+  
+            </div>
+  
+            <div class="field">
+                <label class="label">Price </label>
+                <div class="form-group input-group">
+                <input style="width: 50%;" type="text" 
+                 class="input" formControlName="Price">
+                </div>
+  
+            </div>
+  
+          <div class="field">
+            <label class="label">From date </label>
+            <div class="form-group input-group">
+            <input style="width: 50%;" type="date" 
+             class="input" formControlName="Date1">
+            </div>
+          </div>
+  
+          <div class="field">
+            <label class="label">To date </label>
+            <div class="form-group input-group">
+            <input style="width: 50%;" type="date" 
+             class="input" formControlName="Date2">
+            </div>
+          </div>
+    
+            
+    
+            <button type="submit"  class="button is-success">
+               <strong>Save</strong></button>
+               <button  class="button is-danger" [routerLink]="['/rentflight']" routerLinkActive="router-link-active" style="margin-left: 45px;">
+                <strong>Back</strong></button>
+        </form>
+    
+    </div>
+  </section>

@@ -1,0 +1,198 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/reghome">
+        <img src="/assets/img/ns.jpg" width="112" height="28">
+      </a>
+  
+      <a role="button" class="navbar-burger burger"  aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" routerLink="/rentflight">
+          Search flights
+         </a>
+   
+         <a class="navbar-item">
+           Hotels
+         </a>
+ 
+         <a class="navbar-item" routerLink="/carcompanies">
+           Rent a car
+         </a>
+ 
+         <a class="navbar-item" routerLink="/friends" >
+             Friends
+         </a>
+ 
+         <a class="navbar-item" routerLink="/myreservations">
+             My Reservations
+         </a>
+         
+         <a class="navbar-item" routerLink="/companies" >
+           AvioCompanies
+       </a>
+  
+        <div class="navbar-item has-dropdown-up is-hoverable">
+          
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+           
+            <a class="button is-primary" routerLink="/profile">
+              Profile
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      
+    </div>
+  </nav>
+
+  <!-- <div class="field" style="display: inline-block;margin-left: 30%;">
+    <p class="control has-icons-left">
+      <span class="select" style="margin-right: 40px;">
+        <select>
+          <option class="placeholder" selected disabled value="">Trip type</option>
+          <option>round-trip</option>
+          <option>one-way</option>
+          <option>multy city</option>
+        </select>
+      </span>
+      <span class="select" style="margin-right: 40px;">
+        <select>
+          <option class="placeholder" selected disabled value="">Number of persons</option>
+         
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </span>
+      <span class="select">
+        <select>
+            <option class="placeholder" selected disabled value="">Class</option>
+          <option>economy</option>
+          <option>business</option>
+          <option>first</option>
+        </select>
+      </span>
+      
+    </p>
+    
+  </div>
+
+  <div class="control" style="margin-left: 10%;">
+    <input class="input" style="width: 15%;margin-right: 10px;" type="text" placeholder="From">
+    <img src="/assets/img/strelice.png" width="50" height="25">
+    <input class="input" style="width: 15%;margin-left: 10px;" type="text" placeholder="To">
+  </div>
+
+  <button class="button is-info is-outlined" type="submit" style="margin-left: 48%;" routerLink="/filtered">
+    Search flights
+  </button>
+ -->
+
+
+
+  <form [formGroup]="registerForm" > 
+
+    
+    <div class="field" style="display: inline-block;margin-left: 30%;">
+      
+
+        <button class="button is-danger" routerLink="/addflight"  style="margin-left: 131%;" >
+          Add flight
+        </button>
+        
+      <!-- </p> -->
+      
+    </div>
+
+    <div class="control" style="margin-left: 10%;">
+      <div class="form-group input-group">
+        <input class="input" style="width: 15%;margin-right: 10px;" type="text" placeholder="From" formControlName="City1" required>
+      </div>
+        <img src="/assets/img/strelice.png" width="50" height="25">
+      <div class="form-group input-group">
+        <input class="input" style="width: 15%;margin-left: 10px;" type="text" placeholder="To" formControlName="City2" required>
+      </div>
+      <div class="inputdate">
+          <div class="form-group input-group">
+        
+           <input class="input" type="date" style="width: 15%;margin-left: 10px;" placeholder="From date" formControlName="Date1" required>
+          </div>
+      </div>
+      <div class="inputdate">
+        <div class="form-group input-group">
+        
+           <input class="input" type="date" style="width: 15%;margin-left: 10px;" placeholder="To date" formControlName="Date2" required>
+        </div>
+      </div>
+    </div>
+    <button class="button is-info is-outlined" type="button" (click)="onSubmit()" style="margin-left: 48%;" routerLink="/filtered">
+      Search flights
+    </button>
+</form>
+
+<!-- <div class="inputdate">
+  <input class="input" type="date" style="width: 15%;margin-left: 10px;">
+</div> -->
+
+ 
+<div class="table-wrapper-scroll-y my-custom-scrollbar" name="tabela">
+  
+  <table class="table table-bordered table-striped mb-0" style="width: 60%;" align="center">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Company</th>
+        <th scope="col">From</th>
+        <th scope="col">To</th>
+        <th scope="col">Date from</th>
+        <th scope="col">Date to</th>
+        <th scope="col">Price</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let flight of flights" [attr.id]="flight.id">
+        <th scope="row" id="flight.id">{{flight.id}}</th>
+        <td > <img src="{{flight.photo}}" alt="Image"></td>
+        <td align="center">{{flight.city1}}</td>
+        <td align="center">{{flight.city2}}</td>
+        <td align="center">{{flight.date1}}</td>
+        <td align="center">{{flight.date2}}</td>
+        <td align="center">{{flight.price}}$</td>
+        <td align="center"><a class="button is-danger" id="remove" (click)="deleteRow(flight.id)">Delete</a><a class="button is-success" (click)="onFlightView(flight.id)">Edit</a></td>
+        <!-- <td align="center">Otto</td>
+        <td align="center"></td> -->
+        
+      </tr>
+     
+    </tbody>
+  </table>
+
+</div>

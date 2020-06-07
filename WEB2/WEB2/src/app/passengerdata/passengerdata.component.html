@@ -1,0 +1,54 @@
+<form [formGroup]="registerForm" >
+<div class="box" style="width: 600px;height: 600px;margin-left: 30%;margin-bottom: 15px;margin-top: 30px;">
+    <article class="media">
+        <div class="media-content">
+            <div class="content">
+                <a class="button is-danger" style="float:right" onclick=" window.history.back()">Back</a>
+                <div class="field">
+                    <label class="label" style="margin-left: 25%;margin-top: 1%;">Name</label>
+                    <div class="control">
+                      <div class="form-group input-group">
+                      <input class="input" style="width: 40%;margin-left: 25%;" type="text" formControlName="name">
+                    </div>
+                    </div>
+                  </div>
+                
+                  <div class="field">
+                    <label class="label" style="margin-left: 25%;">Surname</label>
+                    <div class="control">
+                      <div class="form-group input-group">
+                      <input class="input" style="width: 40%;margin-left: 25%;" type="text" formControlName="lastname">
+                    </div>
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <label class="label" style="margin-left: 25%;">Email</label>
+                   
+                    <div class="control">
+                      <div class="form-group input-group">
+                      <input class="input" style="width: 40%;margin-left: 25%;" type="email" formControlName="email">
+                    </div>
+                    </div>
+                  </div>
+                
+                  <div class="field">
+                    <label class="label" style="margin-left: 25%;">Phone number</label>
+                    <div class="control">
+                      <div class="form-group input-group"> 
+                      <input class="input" style="width: 40%;margin-left: 25%;" type="text" formControlName="phoneNumber" >
+                      </div>
+                    </div>
+                  </div>
+
+                 
+                  
+                  <a class="button is-primary" style="margin-top: 20px;width: 200px;margin-left: 30%;">Done</a>
+                  <br>
+                  <p style="margin-top: 10px;">Need car? Visit our  <a href="/carcompanies">rent-a-car</a> service!</p>
+                  
+            </div>
+        </div>
+    </article>
+</div>
+</form>

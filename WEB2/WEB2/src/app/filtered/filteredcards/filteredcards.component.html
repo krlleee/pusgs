@@ -1,0 +1,37 @@
+<div class="box" style="width: 700px;height: 230px;margin-left: 30%;margin-bottom: 15px;">
+    <article class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img src="{{FlightInfo.photo}}" alt="Image">
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <img src="/assets/img/uzlet.png" style="height: 30px;width: 30px;float: left;margin-right: 5px;">
+        <label class="label" style="float: left;">{{FlightInfo.city1}}</label>
+        <img src="/assets/img/slet.png" style="height: 30px;width: 30px;float: left;margin-left: 10px;">
+        <label class="label" style="float: left;">{{FlightInfo.city2}}</label>
+        <br>
+        <br>
+        <label class="label" style="float:left;margin-right: 30px;">{{FlightInfo.city1short}}:{{FlightInfo.time1}}</label>
+        <label class="label" style="float:left;margin-right: 30px;">{{FlightInfo.city2short}}:{{FlightInfo.time2}}</label>
+        <label class="label" >Flight duration:{{FlightInfo.flighttime}}</label>
+        <br>
+        <label class="label" style="float:left;margin-right: 30px;">Trip type:{{FlightInfo.triptype}}</label>
+        
+        <label class="label" style="float:left;margin-right: 30px;">From date:{{FlightInfo.date1}}</label>
+        <label class="label">To date:{{FlightInfo.date2}}</label>
+        <br>
+        <label class="label" style="float:left">Price:{{FlightInfo.price}}$</label>
+        <a class="button is-primary" style="margin-left: 280px;" (click)="onReserveView()">Reserve</a>
+
+
+        
+      
+      </div>
+      
+      
+     </div>
+       
+    </article>
+</div>
